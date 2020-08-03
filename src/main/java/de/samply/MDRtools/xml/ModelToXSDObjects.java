@@ -1,10 +1,10 @@
-package de.samply.fhir2mdr.xml;
+package de.samply.MDRtools.xml;
 
-import de.samply.fhir2mdr.model.*;
-import de.samply.fhir2mdr.model.DataElement;
-import de.samply.fhir2mdr.model.Element;
-import de.samply.fhir2mdr.model.Namespace;
-import de.samply.fhir2mdr.model.PermissibleValue;
+import de.samply.MDRtools.model.*;
+import de.samply.MDRtools.model.DataElement;
+import de.samply.MDRtools.model.Element;
+import de.samply.MDRtools.model.Namespace;
+import de.samply.MDRtools.model.PermissibleValue;
 import de.samply.schema.mdr.common.*;
 
 import java.math.BigInteger;
