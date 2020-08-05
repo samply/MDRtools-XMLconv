@@ -33,7 +33,7 @@
     <server>
       <id>github</id>
       <username>noemide</username>
-      <password>$MODEL_PKG_TOKEN</password>
+      <password>SECRET</password>
     </server>
   </servers>
 </settings>
