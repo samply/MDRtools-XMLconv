@@ -16,7 +16,7 @@
         <dependency>
             <groupId>de.samply.mdr-tools</groupId>
             <artifactId>mdr-tools-model</artifactId>
-            <version>1.0</version>
+            <version>1.0.3</version>
         </dependency>
         <dependency>
             <groupId>javax.xml.bind</groupId>
@@ -36,6 +36,39 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <build>
+    <pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </pluginManagement>
+    <plugins>
+        <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>jaxb2-maven-plugin</artifactId>
+            <version>2.5.0</version>
+            <executions>
+                <execution>
+                    <id>xjc</id>
+                    <goals>
+                        <goal>xjc</goal>
+                    </goals>
+                </execution>
+            </executions>
+            <configuration>
+                <packageName>de.samply.schema.mdr.common</packageName>
+            </configuration>
+        </plugin>
+    </plugins>
+    </build>
 
     <distributionManagement>
         <repository>
